@@ -1,0 +1,23 @@
+.parentContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.parentContainer > div {
+  background-color: yellow;
+  width: 50px;
+  height: 30px;
+  padding: 35px;
+  margin: 10px;
+  border: 1px solid black;
+  user-select: none;
+  cursor: pointer;
+}
+
+.box:nth-child(4) {
+  grid-column: span 4;
+}
+.green {
+  background-color: green !important;
+}
